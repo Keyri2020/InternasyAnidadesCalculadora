@@ -1,5 +1,6 @@
 package com.example.internasyanidadescalculadora
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -8,7 +9,7 @@ import android.widget.TextView
 import android.view.View
 import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() { //Definir variables
     var etn_Valor1:EditText?=null
     lateinit var etn_Valor2:EditText
     lateinit var tv_Resultado:TextView
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun calcular(vista:View){
+    fun calcular(vista:View){ //Enviar método a la vista
         val valor1_String = etn_Valor1?.text.toString()
         val varlo2_String = etn_Valor2?.text.toString()
 
@@ -63,15 +64,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun claseAnidadesyInternas(){
-        //clase anidad (nasted class)
+        //clase anidada (nested class)
         val miClaseAnidada = miClaseAnidadayInterna.miClaseAnidada()
-        val sumarDosNum = miClaseAnidada.suma(5,6)
-        print("El resultado de la suma dos es $sumarDosNum")
+        val sumarDosNum = miClaseAnidada.suma(5,2)
+        print("El resultado de la suma es $sumarDosNum")
 
-        //clase interna (Inner class)
+        //clase interna (inner class)
         val miClaseInterna1 = miClaseAnidadayInterna().miClaseInterna()
-        val sumarDos = miClaseInterna1.sumarDos(3)
+        val sumarDos = miClaseInterna1.sumarDos(1)
         print("El resultado de la suma dos es $sumarDos")
+    }
+
+    fun btnSiguiente(vista: View){
+        val ventanaSiguiente:Intent = Intent(applicationContext,ListView::class.java)
+        startActivity(ventanaSiguiente)
     }
 
 }

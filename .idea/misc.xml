@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/keyri/AndroidStudioProjects/InternasyAnidadesCalculadora/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/keyri/AndroidStudioProjects/InternasyAnidadesCalculadora/app/src/main/res/layout/activity_mi_clase_anidaday_interna.xml" value="0.1" />
+        <entry key="..\:/Users/keyri/AndroidStudioProjects/InternasyAnidadesCalculadora/app/src/main/res/layout/activity_list_view.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/keyri/AndroidStudioProjects/InternasyAnidadesCalculadora/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/keyri/AndroidStudioProjects/InternasyAnidadesCalculadora/app/src/main/res/layout/activity_mi_clase_anidaday_interna.xml" value="0.22" />
+        <entry key="..\:/Users/keyri/AndroidStudioProjects/InternasyAnidadesCalculadora/app/src/main/res/layout/list_items_claseprogramacion.xml" value="0.18342391304347827" />
       </map>
     </option>
   </component>
